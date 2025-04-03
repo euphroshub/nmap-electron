@@ -50,7 +50,7 @@ npm start
 npm run build:deb
 
 # Install the package
-sudo dpkg -i dist/nmap-scanner-electron_1.0.0_amd64.deb
+sudo dpkg -i dist/nmap-electron_1.0.0_amd64.deb
 
 # Install any missing dependencies
 sudo apt-get install -f
@@ -62,7 +62,7 @@ sudo apt-get install -f
 npm run build:rpm
 
 # Install the package
-sudo rpm -i dist/nmap-scanner-electron-1.0.0.x86_64.rpm
+sudo rpm -i dist/nmap-electron-1.0.0.x86_64.rpm
 ```
 
 ##### For Other Distributions (AppImage)
@@ -71,10 +71,10 @@ sudo rpm -i dist/nmap-scanner-electron-1.0.0.x86_64.rpm
 npm run build:appimage
 
 # Make the AppImage executable
-chmod +x dist/nmap-scanner-electron-1.0.0.AppImage
+chmod +x dist/nmap-electron-1.0.0.AppImage
 
 # Run the AppImage
-./dist/nmap-scanner-electron-1.0.0.AppImage
+./dist/nmap-electron-1.0.0.AppImage
 ```
 
 ## Usage
