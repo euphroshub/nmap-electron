@@ -30,10 +30,10 @@ sudo pacman -S nmap
 
 ```bash
 # Clone the repository
-git clone [https://github.com/euphroshub/nmap-electron]
+git clone https://github.com/euphroshub/nmap-electron
 
 # Navigate to the project directory
-cd nmap-scanner-electron
+cd nmap-electron
 
 # Install dependencies
 npm install
