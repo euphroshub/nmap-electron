@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nmap Scanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Nmap Scanner</h1>
+            <p>Scan network hosts and discover open ports</p>
+        </header>
+
+        <div class="scan-form">
+            <div class="form-group">
+                <label for="target">Target (IP or Hostname)</label>
+                <input type="text" id="target" placeholder="e.g., 192.168.1.1 or scanme.nmap.org" required>
+            </div>
+            <button id="scanButton">Start Scan</button>
+            <div class="loading" id="loading">Scanning in progress...</div>
+            <div class="error" id="error"></div>
+        </div>
+
+        <div class="results">
+            <h2>Scan Results</h2>
+            <pre id="results"></pre>
+        </div>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

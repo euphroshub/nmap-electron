@@ -1,0 +1,38 @@
+{
+  "name": "nmap-scanner-electron",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --debug",
+    "build": "electron-builder",
+    "build:deb": "electron-builder --linux deb",
+    "build:rpm": "electron-builder --linux rpm",
+    "build:appimage": "electron-builder --linux appimage"
+  },
+  "keywords": [
+    "nmap",
+    "port-scanner",
+    "electron"
+  ],
+  "author": "euphros <euphros@protonmail.com>",
+  "license": "ISC",
+  "description": "Nmap port scanner built with Electron",
+  "devDependencies": {
+    "electron": "^35.1.3",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.nmapscanner.electron",
+    "productName": "Nmap Scanner",
+    "linux": {
+      "target": [
+        "deb",
+        "rpm",
+        "appimage"
+      ],
+      "category": "Utility",
+      "maintainer": "euphros <euphros@protonmail.com>"
+    }
+  }
+}
